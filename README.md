@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Book Library Frontend
 
-## Getting Started
+This is a simple frontend application built with React for managing a book library.
 
-First, run the development server:
+## Technology Choices
 
-```bash
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Axios: A promise-based HTTP client for making API requests.
+- TypeScript: A statically typed superset of JavaScript that enhances code quality and maintainability.
+
+## Features
+
+- CRUD Operations: Interface for creating, reading, updating, and deleting books.
+- UI Components: Custom UI components using Tailwind CSS.
+- API Integration: Communicates with the Book Library API for data management.
+
+## Additional Features
+
+- User Feedback: Added messages to inform users about the success or failure of their actions (e.g., adding, updating, or deleting a book).
+
+- Responsive Design: Ensured the application is responsive and works well on different screen sizes.
+
+## Prerequisites
+
+Node.js (v16 or above)
+npm (v6 or above) or Yarn (v1.22 or above)
+
+## Installation
+
+### Clone the repository:
+
+git clone [<book-library-frontend>](https://github.com/petertemboii/book-library-frontend.git)
+cd book-library-frontend
+
+### Install dependencies:
+
+npm install
+or
+yarn install
+
+## Running the Application
+
 npm run dev
-# or
+or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pages and Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Home
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+GET /
 
-## Learn More
+### Add Book
 
-To learn more about Next.js, take a look at the following resources:
+/add-book
+Form for adding a new book to the library.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Edit Book
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+/edit-book
+Form for editing an existing book in the library. Requires the book ID.
 
-## Deploy on Vercel
+### Delete Book
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/delete-book
+Form for deleting a book from the library. Requires the book ID
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Styling
+
+The application uses Tailwind CSS for styling. You can find the configuration in tailwind.config.js.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
